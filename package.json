@@ -16,9 +16,12 @@
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
+    "is_js": "^0.8.0",
+    "lodash": "^4.3.0",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.0",
     "passport-facebook-token": "^3.2.0",
+    "pg-native": "^1.10.0",
     "pg-promise": "^3.1.4",
     "redis": "^2.4.2",
     "sequelize": "^3.19.0"
