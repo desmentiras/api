@@ -23,7 +23,11 @@ export default class {
       User
         .findById(recipient, {attributes: ['reputation']})
         .then(user => {
-          const reputation = quantity + user.reputation
+          let reputation = quantity + user.reputation
+
+          if (reputation < 0) {
+            reputation = 0
+          }
 
           User
             .update({reputation: reputation}, {where: {id: recipient}})
